@@ -1,1 +1,57 @@
+</p>
+  <form name="myForm">
+      <p style="text-align:center">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd">
+            <input type="submit" value="Login">
+          </form>
+        
+<script>
 
+        const urlParams = new URLSearchParams(window.location.search);
+        const usernameParam = urlParams.get('username');
+        const passwordParam = urlParams.get('pwd');
+
+         if (usernameParam == "John Doe" && passwordParam == "Test") {
+           window.alert("Correct");
+           urlParams.set('username','');
+         } 
+         else if (usernameParam != null && passwordParam != null) {
+           window.alert("Incorrect Password or Username");
+        }
+
+</script>
+          
+ <p>
+  
+  <style>
+      a:link {
+        color:white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:visited {
+        color:white;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: rgb(0, 119, 255);
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      </style>
+
+<body style="background-color:grey;">
+  
+  <title>Blurton</title>   
